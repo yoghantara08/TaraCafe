@@ -1,0 +1,66 @@
+:root {
+  --hitam: #090a0b;
+  --abu-abu: #cecece;
+  --warna1: #8e6456;
+  --warna2: #414048;
+  --warna3: #533427;
+  --warna4: #5d5d5f;
+  --warna5: #956d57;
+  --warna6: #836f71;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif !important;
+}
+
+nav {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  color: #fafafa;
+}
+.navbar-brand:hover {
+  color: #fafafa;
+}
+
+.navbar-nav {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.nav-item {
+  padding-left: 50px;
+}
+
+.nav-item a {
+  overflow: hidden;
+  color: #ebebeb;
+}
+.nav-item a:hover {
+  color: #fff;
+}
+
+.bawah::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #dbdbdb;
+  width: 65%;
+  margin: auto;
+  opacity: 0;
+  transition: 0.5s;
+}
+.bawah:hover::after {
+  animation: slide 0.3s forwards;
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
