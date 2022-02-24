@@ -90,7 +90,7 @@ nav {
 
 .jumbotron-text {
   padding-top: 200px;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 10;
 }
@@ -108,4 +108,41 @@ nav {
 }
 .jumbotron-text p {
   color: #ebebeb;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .jumbotron {
+    margin-top: 0;
+  }
+  .jumbotron-text {
+    padding-top: 120px;
+  }
+
+  /* Nav */
+  .sticky-top {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+  .navbar {
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-brand {
+    color: #090a0b;
+  }
+  .navbar-brand:hover {
+    color: #090a0b;
+  }
+  .nav-item a {
+    color: #414048;
+    transition: 0.3s;
+  }
+  .nav-item a:hover {
+    color: #414048;
+    opacity: 0.5;
+  }
+  .bawah::after {
+    display: none;
+  }
 }
