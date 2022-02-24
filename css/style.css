@@ -12,28 +12,30 @@
 body,
 html {
   font-family: "Poppins", sans-serif !important;
+  height: 2000vh;
 }
 
+/* ==================================================================== */
+/* Navbar */
+.sticky-top {
+  padding: 0 !important;
+}
 nav {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
 .navbar-brand {
   color: #fafafa;
 }
 .navbar-brand:hover {
   color: #fafafa;
 }
-
 .navbar-nav {
   font-size: 1.05rem;
   font-weight: 600;
 }
-
 .nav-item {
   padding-left: 50px;
 }
-
 .nav-item a {
   overflow: hidden;
   color: #ebebeb;
@@ -45,7 +47,7 @@ nav {
 .bawah::after {
   content: "";
   display: block;
-  border-bottom: 3px solid #dbdbdb;
+  border-bottom: 3px solid #f5f5f5;
   width: 65%;
   margin: auto;
   opacity: 0;
@@ -63,4 +65,47 @@ nav {
   100% {
     transform: translateX(0);
   }
+}
+
+/* ==================================================================== */
+/* Jumbotron */
+.jumbotron {
+  min-height: 80vh;
+  background-image: url(../img/cafe.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -71px;
+}
+
+.jumbotron::after {
+  content: "";
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.jumbotron-text {
+  padding-top: 200px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+.jumbotron-text h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 300 !important;
+}
+.jumbotron-text h4 {
+  font-size: 1.7rem;
+  color: #ffcb69;
+}
+.jumbotron-text strong {
+  font-weight: bold;
+}
+.jumbotron-text p {
+  color: #ebebeb;
 }
