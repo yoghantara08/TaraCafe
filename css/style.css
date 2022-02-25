@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
 :root {
   --hitam: #090a0b;
   --abu-abu: #cecece;
@@ -15,7 +16,6 @@ html {
   height: 2000vh;
 }
 
-/* ==================================================================== */
 /* Navbar */
 nav {
   z-index: 100;
@@ -24,25 +24,16 @@ nav {
   transition: all 1.5s ease-in-out;
 }
 .navbar-brand {
-  color: #fafafa;
-}
-.navbar-brand:hover {
-  color: #fafafa;
+  font-size: 2.5rem !important;
+  font-family: "Viga", sans-serif;
 }
 .navbar-nav {
   font-size: 1.05rem;
   font-weight: 600;
 }
-.nav-item {
-  padding-left: 50px;
-}
 .nav-item a {
   overflow: hidden;
-  color: #ebebeb;
   box-sizing: border-box;
-}
-.nav-item a:hover {
-  color: #fff;
 }
 
 .bawah::after {
@@ -59,7 +50,7 @@ nav {
   opacity: 1;
 }
 .nav-scrolled-text-shadow {
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .nav-scrolled {
   background-color: rgb(245, 245, 245);
