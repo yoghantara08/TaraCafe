@@ -14,6 +14,7 @@ body,
 html {
   font-family: "Poppins", sans-serif !important;
   height: 2000vh;
+  background-color: rgb(230, 230, 230) !important;
 }
 
 /* Navbar */
@@ -53,8 +54,8 @@ nav {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .nav-scrolled {
-  background-color: rgb(245, 245, 245);
-  box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.2);
   transition: all 1.5s;
 }
 .navbar-brand,
@@ -115,6 +116,12 @@ nav {
   z-index: 1;
 }
 
+/* ==================================================================== */
+/* Menu Section */
+.menu {
+  padding-top: 50px;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .bawah::after {
@@ -123,6 +130,9 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .jumbotron-text {
+    padding-top: 150px;
+  }
   .jumbotron-text h1 {
     font-size: 3.5rem;
     padding-top: 10px;
