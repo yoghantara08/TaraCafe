@@ -18,8 +18,10 @@ html {
 /* ==================================================================== */
 /* Navbar */
 nav {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   z-index: 100;
+}
+.navbar {
+  transition: all 1.5s ease-in-out;
 }
 .navbar-brand {
   color: #fafafa;
@@ -37,6 +39,7 @@ nav {
 .nav-item a {
   overflow: hidden;
   color: #ebebeb;
+  box-sizing: border-box;
 }
 .nav-item a:hover {
   color: #fff;
@@ -54,6 +57,22 @@ nav {
 .bawah:hover::after {
   animation: slide 0.3s forwards;
   opacity: 1;
+}
+.nav-scrolled-text-shadow {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.nav-scrolled {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.4);
+  transition: all 1.5s;
+}
+.navbar-brand,
+.nav-item a {
+  transition: all 1.5s ease-in;
+}
+.navbar-toggler,
+.navbar-toggler-icon {
+  transition: all 1.5s ease-out;
 }
 
 @keyframes slide {
@@ -73,7 +92,6 @@ nav {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: -71px;
 }
 
 .jumbotron::after {
@@ -108,46 +126,14 @@ nav {
 
 /* Responsive */
 @media (max-width: 991px) {
-  /* Nav */
-  .navbar {
-    background-color: #f5f5f5;
-    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-  }
-  .navbar-brand {
-    color: #090a0b;
-  }
-  .navbar-brand:hover {
-    color: #090a0b;
-  }
-  .nav-item a {
-    color: #414048;
-    transition: 0.3s;
-  }
-  .nav-item a:hover {
-    color: #414048;
-    opacity: 0.5;
-  }
   .bawah::after {
     display: none;
   }
-
-  /* Jumbotron */
-  .jumbotron {
-    margin-top: 0;
-  }
-  .jumbotron-text {
-    padding-top: 120px;
-  }
 }
 
-@media (max-width: 576px) {
-  .jumbotron-text {
-    padding-top: 180px;
-  }
+@media (max-width: 768px) {
   .jumbotron-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-top: 10px;
   }
 }
