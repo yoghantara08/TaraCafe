@@ -29,12 +29,13 @@ nav {
   font-family: "Viga", sans-serif;
 }
 .navbar-nav {
-  font-size: 1.05rem;
   font-weight: 600;
 }
 .nav-item a {
   overflow: hidden;
   box-sizing: border-box;
+  font-size: 1.3rem;
+  margin-bottom: -5px;
 }
 
 .bawah::after {
@@ -122,6 +123,57 @@ nav {
   padding-top: 50px;
 }
 
+.menu-text {
+  margin-top: 80px;
+}
+
+/* .menu-title .garis {
+  border-bottom: 2px solid black;
+}
+.menu-title h2 {
+  color: #956d57;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  font-size: 2.5rem;
+} */
+
+.menu-text h5 {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  color: #8e6456;
+}
+
+.menu-list {
+  background: linear-gradient(to right, rgb(120, 50, 25), rgb(180, 110, 80), rgb(200, 130, 100));
+  width: max-content;
+  padding: 12px;
+  border-radius: 5px 30px 30px 5px;
+  color: #fff;
+}
+.menu-list p,
+.menu-list span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.menu-list p {
+  transition: all 0.3s ease;
+}
+.menu-list p:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.border-menu-image {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  width: 420px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.border-menu-image img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .bawah::after {
@@ -136,5 +188,9 @@ nav {
   .jumbotron-text h1 {
     font-size: 3.5rem;
     padding-top: 10px;
+  }
+
+  .menu-text {
+    margin-top: 0;
   }
 }
