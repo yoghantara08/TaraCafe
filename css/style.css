@@ -127,14 +127,11 @@ nav {
   margin-top: 80px;
 }
 
-/* .menu-title .garis {
-  border-bottom: 2px solid black;
-}
 .menu-title h2 {
   color: #956d57;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
   font-size: 2.5rem;
-} */
+}
 
 .menu-text h5 {
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
@@ -163,15 +160,12 @@ nav {
 }
 
 .border-menu-image {
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  width: 420px;
-  height: 500px;
+  box-shadow: 10px 15px 20px 5px rgba(100, 100, 100, 0.4);
   border-radius: 10px;
   overflow: hidden;
 }
 .border-menu-image img {
   width: 100%;
-  height: 100%;
 }
 
 /* Responsive */
@@ -192,5 +186,10 @@ nav {
 
   .menu-text {
     margin-top: 0;
+  }
+
+  .border-menu-image {
+    max-height: 450px;
+    max-width: 400px;
   }
 }
