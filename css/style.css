@@ -124,7 +124,8 @@ nav {
 }
 
 .menu-text {
-  margin-top: 80px;
+  position: relative;
+  z-index: 1000;
 }
 
 .menu-title h2 {
@@ -142,7 +143,7 @@ nav {
 .menu-list {
   background: linear-gradient(to right, rgb(120, 50, 25), rgb(180, 110, 80), rgb(200, 130, 100));
   width: max-content;
-  padding: 12px;
+  padding: 12px 20px 12px 12px;
   border-radius: 5px 30px 30px 5px;
   color: #fff;
 }
@@ -166,6 +167,28 @@ nav {
 }
 .border-menu-image img {
   width: 100%;
+  height: 100%;
+}
+
+.right-img-menu {
+  bottom: -70px;
+  right: 0;
+  box-shadow: -5px 10px 20px 3px rgba(100, 100, 100, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Responsive */
