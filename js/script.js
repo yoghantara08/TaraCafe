@@ -16,8 +16,9 @@ document.addEventListener("scroll", function () {
   }
 });
 
-const headerContact = document.querySelector(".header");
-headerContact.innerHTML = showHeader("index.html", "index.html#menu", "index.html#gallery", "index.html#reviews", "#");
+// Header
+const header = document.querySelector(".header");
+header.innerHTML = showHeader("index.html", "index.html#menu", "index.html#gallery", "index.html#reviews", "contact.html");
 
 function showHeader(home, menu, gallery, reviews, contact) {
   return `<nav class="navbar navbar-expand-lg p-1 fixed-top navbar-dark nav-scrolled-text-shadow" id="navToggler">
