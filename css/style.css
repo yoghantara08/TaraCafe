@@ -273,6 +273,10 @@ nav {
   color: #4b4b4b;
 }
 
+.google-map {
+  width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .bawah::after {
