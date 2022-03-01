@@ -87,7 +87,7 @@ nav {
 }
 .jumbotron-contact {
   background-image: url(../img/cafe2.jpg);
-  min-height: 60vh;
+  min-height: 45vh;
 }
 
 .jumbotron::after {
@@ -105,6 +105,9 @@ nav {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 10;
+}
+.jumbotron-contact .jumbotron-text {
+  padding-top: 150px;
 }
 .jumbotron-text h1 {
   color: #fff;
@@ -287,6 +290,42 @@ nav {
   font-size: 24px;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 50px;
+}
+.footer {
+  padding-top: 30px;
+  background-image: url(../img/cafe3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 30vh;
+}
+#footer.footer-contact {
+  margin-top: -25px;
+}
+.footer::after {
+  content: "";
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-content,
+.text-footer {
+  padding-top: 20px;
+  position: relative;
+  z-index: 100;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.footer-title h1 {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive */

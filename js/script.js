@@ -18,7 +18,11 @@ document.addEventListener("scroll", function () {
 
 // Header
 const header = document.querySelector(".header");
-header.innerHTML = showHeader("index.html", "index.html#menu", "index.html#gallery", "index.html#reviews", "contact.html");
+header.innerHTML = showHeader("index.html#home", "index.html#menu", "index.html#gallery", "index.html#reviews", "contact.html");
+
+// Footer
+const footer = document.getElementById("footer");
+footer.innerHTML = showFooter();
 
 function showHeader(home, menu, gallery, reviews, contact) {
   return `<nav class="navbar navbar-expand-lg p-1 fixed-top navbar-dark nav-scrolled-text-shadow" id="navToggler">
@@ -48,4 +52,27 @@ function showHeader(home, menu, gallery, reviews, contact) {
               </div>
             </div>
           </nav>`;
+}
+
+function showFooter() {
+  return `<div class="container-fluid footer">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center footer-content">
+                <div class="footer-title text-white">
+                  <h1 class="fw-bold">TaraCafe.</h1>
+                  <ul class="list-unstyled text-uppercase">
+                    <li>open from 07:00 AM - 11:00 PM</li>
+                    <li class="mb-3">Bali - Denpasar</li>
+                  </ul>
+                  <span class="me-3"><i class="fa-brands fa-instagram"></i> TaraCafe</span>
+                  <span><i class="fa-brands fa-whatsapp"></i> +6281234567</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-footer text-white text-center">
+              <p class="m-0">
+                Created with <i class="fa-solid fa-heart text-danger"></i> by <a href="https://www.instagram.com/gustutyoghantara/" target="_blank" class="text-warning">Gustut Yoghantara</a> © 2022 Copyright | All Rights Reserved
+              </p>
+            </div>
+          </div>`;
 }
