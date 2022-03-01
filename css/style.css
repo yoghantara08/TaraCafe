@@ -86,7 +86,7 @@ nav {
   position: relative;
 }
 .jumbotron-contact {
-  background-image: url(../img/cafe2.jpg);
+  background-image: url(../img/cafe2.png);
   min-height: 45vh;
 }
 
@@ -298,7 +298,7 @@ nav {
 }
 .footer {
   padding-top: 30px;
-  background-image: url(../img/cafe3.jpg);
+  background-image: url(../img/cafe3.png);
   background-size: cover;
   background-position: center;
   position: relative;
