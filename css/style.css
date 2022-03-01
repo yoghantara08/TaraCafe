@@ -166,10 +166,10 @@ nav {
   cursor: pointer;
 }
 
-.border-menu-image {
-  box-shadow: 10px 15px 20px 5px rgba(100, 100, 100, 0.4);
+.carousel-menu {
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 10px 15px 20px 5px rgba(100, 100, 100, 0.4);
 }
 .border-menu-image img {
   width: 100%;
