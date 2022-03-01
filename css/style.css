@@ -188,6 +188,10 @@ nav {
   animation: fadeIn 0.3s forwards;
 }
 
+.fade {
+  animation: fadeIn 0.4s forwards;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
