@@ -13,8 +13,8 @@
 body,
 html {
   font-family: "Poppins", sans-serif !important;
-  height: 1000vh;
   background-color: rgb(230, 230, 230) !important;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -84,6 +84,10 @@ nav {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.jumbotron-contact {
+  background-image: url(../img/cafe2.jpg);
+  min-height: 60vh;
 }
 
 .jumbotron::after {
@@ -273,8 +277,16 @@ nav {
   color: #4b4b4b;
 }
 
+/* Contact */
 .google-map {
   width: 100%;
+}
+.connect li i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 /* Responsive */
@@ -300,5 +312,8 @@ nav {
   .border-menu-image {
     max-height: 450px;
     max-width: 400px;
+  }
+  .jumbotron-contact {
+    padding-top: 40px;
   }
 }
