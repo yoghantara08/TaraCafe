@@ -13,10 +13,47 @@ const rightMenuImage = document.querySelector(".right-img-menu");
 carouselInner.innerHTML = carouselMenuImage("coffee1.png", "coffee2.png", "coffee3.png");
 rightMenuImage.innerHTML = rightImage("coffee-square.png");
 
+// More Menu (Coffee)
 const coffee = document.querySelector(".coffee");
 coffee.addEventListener("click", (e) => {
   e.preventDefault();
   carouselInner.innerHTML = carouselMenuImage("coffee1.png", "coffee2.png", "coffee3.png");
+  rightMenuImage.innerHTML = rightImage("coffee-square.png");
+  menuText1.textContent = "Our Coffee";
+  menuText2.textContent = "Choose Your";
+  menuText3.textContent = "Favorite Coffee";
+  menuText4.textContent = "More than 30+ type of coffee are ready to serve by our professionals.";
+  menuList1.textContent = "Cappucino";
+  menuList2.textContent = "Late";
+  menuList3.textContent = "Arabica";
+});
+// More Menu (Desserts)
+const desserts = document.querySelector(".desserts");
+desserts.addEventListener("click", (e) => {
+  e.preventDefault();
+  carouselInner.innerHTML = carouselMenuImage("desert1.png", "desert2.png", "desert3.png");
+  rightMenuImage.innerHTML = rightImage("desert-square.png");
+  menuText1.textContent = "Our Desserts";
+  menuText2.textContent = "Choose Your";
+  menuText3.textContent = "Favorite Desserts";
+  menuText4.textContent = "Life is short and unpredictable. Eat the dessert first!";
+  menuList1.textContent = "Cake";
+  menuList2.textContent = "Ice Cream";
+  menuList3.textContent = "Brownies";
+});
+// More Menu (Breakfast)
+const breakfast = document.querySelector(".breakfast");
+breakfast.addEventListener("click", (e) => {
+  e.preventDefault();
+  carouselInner.innerHTML = carouselMenuImage("breakfast1.png", "breakfast2.png", "breakfast3.png");
+  rightMenuImage.innerHTML = rightImage("breakfast-square.png");
+  menuText1.textContent = "Our Breakfast";
+  menuText2.textContent = "Start your day";
+  menuText3.textContent = "With Breakfast";
+  menuText4.textContent = "All happiness depends on a leisurely Breakfast!";
+  menuList1.textContent = "Pancake";
+  menuList2.textContent = "Fried Egg";
+  menuList3.textContent = "Cereal";
 });
 
 function carouselMenuImage(img1, img2, img3) {
@@ -27,7 +64,7 @@ function carouselMenuImage(img1, img2, img3) {
             <img src="img/menu/${img2}" alt="" class="img-fluid menu-image" />
         </div>
         <div class="carousel-item border-menu-image">
-            <img src="img/menu/${img3}" alt="" class="img-fluid menu-image" />
+            <img src="img/menu/${img3}" alt="" class="img-fluid menu-image"/>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
