@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
-:root {
-  --hitam: #090a0b;
-  --abu-abu: #cecece;
-  --warna1: #8e6456;
-  --warna2: #414048;
-  --warna3: #533427;
-  --warna4: #5d5d5f;
-  --warna5: #956d57;
-  --warna6: #836f71;
-}
 
 body,
 html {
@@ -189,7 +179,10 @@ nav {
 }
 
 .fade {
-  animation: fadeIn 0.4s forwards;
+  animation: fadeIn 0.5s forwards;
+}
+.slideIn {
+  animation: slideIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -198,6 +191,16 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -333,6 +336,13 @@ nav {
 }
 
 /* Responsive */
+@media (min-width: 1400px) {
+  .right-img-menu {
+    bottom: 40px;
+    right: 100px;
+  }
+}
+
 @media (max-width: 991px) {
   .bawah::after {
     display: none;

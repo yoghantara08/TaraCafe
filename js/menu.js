@@ -9,18 +9,21 @@ const coffee = document.querySelector(".coffee");
 coffee.addEventListener("click", (e) => {
   imgCoffee(e);
   textCoffee();
+  animateOnClick();
 });
 // More Menu (Desserts)
 const desserts = document.querySelector(".desserts");
 desserts.addEventListener("click", (e) => {
   imgDesserts(e);
   textDesserts();
+  animateOnClick();
 });
 // More Menu (Breakfast)
 const breakfast = document.querySelector(".breakfast");
 breakfast.addEventListener("click", (e) => {
   imgBreakfast(e);
   textBreakfast();
+  animateOnClick();
 });
 
 function carouselMenuImage(img1, img2, img3) {
@@ -45,6 +48,22 @@ function carouselMenuImage(img1, img2, img3) {
 
 function rightImage(image) {
   return `<img src="img/menu/${image}" alt="" class="img-fluid right-menu-image" />`;
+}
+
+function animateOnClick() {
+  const menuList = document.querySelector(".menu-list");
+  const menuText = document.querySelector(".menu-text-header");
+
+  carouselInner.classList.add("fade");
+  rightMenuImage.classList.add("fade");
+  menuList.classList.add("slideIn");
+  menuText.classList.add("fade");
+  setTimeout(() => {
+    carouselInner.classList.remove("fade");
+    rightMenuImage.classList.remove("fade");
+    menuList.classList.remove("slideIn");
+    menuText.classList.remove("fade");
+  }, 600);
 }
 
 function imgCoffee(e) {
