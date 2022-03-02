@@ -16,43 +16,9 @@ document.addEventListener("scroll", function () {
   }
 });
 
-// Header
-const header = document.querySelector(".header");
-header.innerHTML = showHeader("index.html#home", "index.html#menu", "index.html#gallery", "index.html#reviews", "contact.html");
-
 // Footer
 const footer = document.getElementById("footer");
 footer.innerHTML = showFooter();
-
-function showHeader(home, menu, gallery, reviews, contact) {
-  return `<nav class="navbar navbar-expand-lg p-1 fixed-top navbar-dark nav-scrolled-text-shadow" id="navToggler">
-            <div class="container">
-              <a class="navbar-brand fw-bold" href="#">TaraCafe</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-uppercase fs-4">
-                  <li class="nav-item m-auto p-3">
-                    <a class="nav-link bawah p-0" aria-current="page" href="${home}">Home</a>
-                  </li>
-                  <li class="nav-item m-auto p-3">
-                    <a class="nav-link bawah p-0" href="${menu}">Menu</a>
-                  </li>
-                  <li class="nav-item m-auto p-3">
-                    <a class="nav-link bawah p-0" href="${gallery}">Gallery</a>
-                  </li>
-                  <li class="nav-item m-auto p-3">
-                    <a class="nav-link bawah p-0" href="${reviews}">Reviews</a>
-                  </li>
-                  <li class="nav-item m-auto p-3 pe-lg-0">
-                    <a class="nav-link bawah p-0" href="${contact}">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>`;
-}
 
 function showFooter() {
   return `<div class="container-fluid footer">
