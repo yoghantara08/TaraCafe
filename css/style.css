@@ -448,3 +448,12 @@ nav {
     padding-top: 40px;
   }
 }
+
+@media (max-width: 500px) {
+  .jumbotron {
+    min-height: 90vh;
+  }
+  .jumbotron-contact {
+    min-height: 60vh;
+  }
+}
