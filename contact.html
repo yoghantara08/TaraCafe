@@ -11,8 +11,16 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/848830b72b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        document.querySelector("body").classList.add("loaded");
+      });
+    </script>
   </head>
   <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-1 fixed-top navbar-dark nav-scrolled-text-shadow" id="navToggler">
       <div class="container">
