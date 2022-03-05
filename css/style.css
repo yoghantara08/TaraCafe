@@ -262,7 +262,6 @@ nav {
 
 /* Gallery */
 #gallery {
-  margin-top: 50px;
   margin-bottom: 100px;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -418,6 +417,44 @@ nav {
   color: white;
 }
 
+/* Quote */
+.quotes {
+  margin-top: 100px;
+  background-image: url(../img/nature.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  font-size: 5rem;
+  color: #fff;
+  position: relative;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+  z-index: 222;
+}
+.quote {
+  font-weight: 400;
+}
+.credit {
+  font-size: 4rem;
+  font-weight: 200;
+}
+.quotes::after {
+  content: "";
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.garisbawah {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  height: 3px;
+  width: 10%;
+  background-color: #f9d71c;
+}
 /* Responsive */
 @media (min-width: 1400px) {
   .right-img-menu {
@@ -429,6 +466,12 @@ nav {
 @media (max-width: 991px) {
   .bawah::after {
     display: none;
+  }
+  .quotes {
+    font-size: 3rem;
+  }
+  .credit {
+    font-size: 2.5rem;
   }
 }
 
