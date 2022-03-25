@@ -418,27 +418,29 @@ nav {
 }
 
 /* Quote */
-.quotes {
-  margin-top: 100px;
+.quote-background {
   background-image: url(../img/nature.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  min-height: 70vh;
-  font-size: 5rem;
-  color: #fff;
   position: relative;
-  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
   z-index: 222;
+}
+.quotes {
+  margin-top: 100px;
+  min-height: 70vh;
+  font-size: 4.5rem;
+  color: #fff;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
 }
 .quote {
   font-weight: 400;
 }
 .credit {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 200;
 }
-.quotes::after {
+.quote-background::after {
   content: "";
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
   position: absolute;
