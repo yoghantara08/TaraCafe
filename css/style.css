@@ -51,15 +51,18 @@ body.loaded > div.loader {
 @keyframes dots {
   0% {
     background-color: rgba(100, 100, 100, 1);
-    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+      24px 0px 0px 0px rgba(100, 100, 100, 0.2);
   }
   25% {
     background-color: rgba(100, 100, 100, 0.4);
-    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2),
+      24px 0px 0px 0px rgba(100, 100, 100, 0.2);
   }
   75% {
     background-color: rgba(100, 100, 100, 0.4);
-    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 1);
+    box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+      24px 0px 0px 0px rgba(100, 100, 100, 1);
   }
 }
 
@@ -193,7 +196,12 @@ nav {
 }
 
 .menu-list {
-  background: linear-gradient(to right, rgb(120, 50, 25), rgb(180, 110, 80), rgb(200, 130, 100));
+  background: linear-gradient(
+    to right,
+    rgb(120, 50, 25),
+    rgb(180, 110, 80),
+    rgb(200, 130, 100)
+  );
   width: max-content;
   padding: 12px 20px 12px 12px;
   border-radius: 5px 30px 30px 5px;
@@ -496,12 +504,24 @@ nav {
 
 @media (max-width: 500px) {
   .jumbotron-text {
-    padding-top: 175px;
+    padding-top: 125px;
   }
   .jumbotron {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .jumbotron-contact {
     min-height: 60vh;
+  }
+
+  .footer {
+    min-height: 40vh;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .credit {
+    font-size: 1.7rem;
   }
 }
